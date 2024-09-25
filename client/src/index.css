@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.home-page {
+  height: 100vh;
+  background-size: cover;
+  transition: background-image 1.5s ease-in-out;
+  position: relative;
+}
+
+.home-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+  z-index: 0; /* Ensure it is below the content */
+}
+
+.home-page1 {
+  background-image: url("/background-1.webp");
+}
+.home-page2 {
+  background-image: url("/background-2.webp");
+}
+.home-page3 {
+  background-image: url("/background-3.webp");
+}
+.home-page4 {
+  background-image: url("/background-4.webp");
+}
+.home-page5 {
+  background-image: url("/background-5.webp");
+}
+.home-page6 {
+  background-image: url("/background-6.webp");
+}
+.home-page7 {
+  background-image: url("/background-7.webp");
+}
+
+.home-page > * {
+  position: relative;
+  z-index: 1; /* Ensure content is above the overlay */
+}
