@@ -1,0 +1,28 @@
+// styles.scss
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    height: 100vh; // Full viewport height
+    background-color: #f4f4f4; // Light gray background
+  }
+  
+  .container {
+    text-align: center; // Center text
+    padding: 20px; // Add some padding around the container
+  }
+  
+  svg {
+    width: 150px; // Adjust the size of the SVG
+    height: auto; // Maintain aspect ratio
+    margin: 20px 0; // Add vertical margin
+  }
+  
+  h1 {
+    font-size: 24px; // Title font size
+    color: #333; // Dark gray color for text
+  }
+  
